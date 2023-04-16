@@ -1,0 +1,57 @@
+site_name: Xiyao Zhuang
+repo_url: https://github.com/xiyaozhuang/xiyao-zhuang
+repo_name: xiyao-zhuang
+
+nav:
+  - Home: index.md
+  - Example Section:
+      - example-section/index.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mod
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+
+    cookies:
+      analytics: Google Analytics
+      github: GitHub
+    actions:
+      - accept
+      - reject
+      - manage
+  analytics:
+    provider: google
+    property: G-1F7JVCS365
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xiyaozhuang
+
+copyright: >
+  Copyright &copy; 2023 Xiyao Zhuang –
+  <a href="#__consent">Change cookie settings</a>
+
+plugins:
+  - git-revision-date-localized:
+      enabled: true
