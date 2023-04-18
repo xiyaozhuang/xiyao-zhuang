@@ -49,6 +49,23 @@
     position: relative;
 
     background-color: #fff;
+
+    display: flex;
+  }
+
+  .feature-contents {
+    flex-grow: 1;
+
+    color: #000000de;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feature-item {
+    flex-grow: 1;
+    margin: 0 0.8rem;
   }
 </style>
 
@@ -67,7 +84,25 @@
 </section>
 
 <section class="feature">
-  <div class="feature-item"></div>
+  <div class="feature-contents md-grid">
+    <div class="feature-item md-typeset">
+      <h2>Feature item 1</h2>
+
+      <p>Example paragraph</p>
+    </div>
+
+    <div class="feature-item md-typeset">
+      <h2>Feature item 2</h2>
+
+      <p>Example paragraph</p>
+    </div>
+
+    <div class="feature-item md-typeset">
+      <h2>Feature item 3</h2>
+
+      <p>Example paragraph</p>
+    </div>
+  </div>
 </section>
 {% endblock %}
 
