@@ -9,6 +9,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -55,3 +56,6 @@ copyright: >
 plugins:
   - git-revision-date-localized:
       enabled: true
+
+watch:
+  - overrides
