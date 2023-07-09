@@ -4,6 +4,7 @@ repo_name: xiyao-zhuang
 
 nav:
   - Home: index.md
+  - Noughts & Crosses: noughts-and-crosses/index.md
   - Example Section:
       - example-section/index.md
 
