@@ -1,0 +1,58 @@
+{% extends "main.html" %} {% block tabs %} {{ super() }}
+
+<link rel="stylesheet" href="../stylesheets/blank-template.css" />
+<link rel="stylesheet" href="../stylesheets/noughts-and-crosses.css" />
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<py-script src="../python-scripts/noughts-and-crosses.py"></py-script>
+
+<section class="container">
+  <div id="board" class="board">
+    <div class="row">
+      <div id="index-1" class="cell">
+        <button py-click="game.make_move('index-1')"></button>
+      </div>
+
+      <div id="index-2" class="cell">
+        <button py-click="game.make_move('index-2')"></button>
+      </div>
+
+      <div id="index-3" class="cell">
+        <button py-click="game.make_move('index-3')"></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="index-4" class="cell">
+        <button py-click="game.make_move('index-4')"></button>
+      </div>
+
+      <div id="index-5" class="cell">
+        <button py-click="game.make_move('index-5')"></button>
+      </div>
+
+      <div id="index-6" class="cell">
+        <button py-click="game.make_move('index-6')"></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="index-7" class="cell">
+        <button py-click="game.make_move('index-7')"></button>
+      </div>
+
+      <div id="index-8" class="cell">
+        <button py-click="game.make_move('index-8')"></button>
+      </div>
+
+      <div id="index-9" class="cell">
+        <button py-click="game.make_move('index-9')"></button>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<!-- create blank canvas -->
+{% block content %} {% endblock %}
